@@ -19,7 +19,7 @@ async function main() {
   )) as QXS__factory;
 
   qxs = (await qxsFactory.deploy(name, symbol, baseURI)) as QXS;
-  console.log("deployed to:", qxs);
+  console.log("deployed to:", qxs.address);
 }
 
 main()
